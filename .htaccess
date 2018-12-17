@@ -1,0 +1,18 @@
+#AddType application/x-httpd-php .png
+
+# Redirect
+# /beer/12 -> /web/?beer:12
+# /home ->  /web/?home
+
+# Redirect 301 /home /web/index.php?home
+# 
+# RewriteEngine on 
+# # Options +FollowSymlinks 
+# RewriteBase /
+# RewriteRule ^(.*)$ /web/index.php?$1 
+# 
+
+# RewriteEngine On
+# RewriteRule ^([^/]*)/([^/]*)\.php$ /web/index.php?goto=$1&id=$2 [L]
+
+ Redirect /index.php /web/index.php
